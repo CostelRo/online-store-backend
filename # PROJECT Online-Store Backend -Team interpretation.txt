@@ -2,7 +2,8 @@
 ## (Team "C.D.S." interpretation)
 
 Design and implement **a part of a new backend system** for an online store application.
-This system will be used to maintain the archive of finalized tranzactions of the store. So, all tranzactions, customers and payments data are to be considered final and un-editable.
+This system will be used to maintain the archive of finalized tranzactions of the store. 
+So, all tranzactions, customers and payments data are to be considered final and un-editable.
 
 The implemented module must meet the following **requirements**:
 
