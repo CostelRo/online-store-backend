@@ -1,0 +1,36 @@
+# PROJECT Online-Store Backend
+## (Team "C.D.S." interpretation)
+
+Design and implement **a part of a new backend system** for an online store application.
+This system will be used to maintain the archive of finalized tranzactions of the store. So, all tranzactions, customers and payments data are to be considered final and un-editable.
+
+The implemented module must meet the following **requirements**:
+
+1) You must define and create the database structure for keeping the archived data, and also adding more data and getting that data later.
+
+2) At first use, the database will be populated with historical data archived in 3 CSV files: a file with Customers data, a file with Carts data, and a file with Payments data. 
+You should define the structure of these CSV files and add data into them prior to this one-time use.
+
+3) Make sure that each Cart-object belongs to one and only one Customer.
+
+4) Make sure to allow for one or more Payment-objects to be linked to a Cart-object.
+
+5) Payments might have different types (e.g. credit card, cash, PayPal). 
+All payments must be considered already processed and finalized. 
+Sensitive information are forbidden from being stored (like full credit card number or cvv).
+
+6) A functionality must be offered for the creation of a Receipt for any Cart-object.
+These receipts are to be generated in PDF format and saved locally.
+A Receipt-object should contain the cart details (items which were ordered) and payments associated with that cart. 
+Save in a DB the cart id, receipt (CLOB or BLOB column type in DB). Save in different columns some details about these carts, like amount, payment type, type of items contained (ex mobile, TV, laptops, furniture, kids toys, clothes etc) and subtotals per each.
+*EXAMPLE*: receipt with ID 12345 contains for category laptop 4317 RON, for kids toys 1000 ron and for clothes 532 RON, having a total of 4317 + 1000 + 532 = 5849 RON.
+
+7) A functionality must be offered for the creation of Reports.
+The reports should be displayed in a web page, using Spark Java for instance.
+The following reports should be available:
+- total sales of today;
+- total sales per each category in the last month;
+- a top of best sold categories;
+- a top of best customers in the last month.
+
+-- END of Requirements file --
