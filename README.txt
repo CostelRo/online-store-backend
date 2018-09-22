@@ -9,7 +9,7 @@ It will be used to maintain in a database the archive of finalized transactions 
 The system should allow the inclusion of the pre-existent archive of past transactions of the store, kept in CSV files.
 The implemented module must meet these requirements:
 
-1) You must define and create the database structure for keeping the archived data, and also adding more data and getting all the data later.
+1) You must define and create the database structure for keeping the archived data.
 
 2) At first use, the database will be populated with historical data archived in CSV files:
 - a file with Customers data (including their Address information);
